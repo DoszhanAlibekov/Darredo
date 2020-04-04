@@ -6,12 +6,12 @@
 */
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	line-height: 30px;
-	color: #999999;
+	font-size: 15px;
+	line-height: 25px;
+	color: #525252;
 	font-size: 400;
 	font-style: normal;
 	font-variant: normal;
-	line-height: 26px;
 }
 
 ol, ul {
@@ -31,8 +31,8 @@ table {
 }
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
 	color: #222222;
 }
 a, a:hover, a:focus, a:active{
@@ -536,22 +536,39 @@ footer
     }
 }
 
-		main {
-		  display: flex;
-		  justify-content: center;
-		}
 
 		/*tr:nth-child(odd) {
 		  background-color: #eee;
 		}*/
+		table {
+			border-collapse: collapse;
+			position: center;
+		}
 
 		th {
 		  background-color: #0CB8B6;
 		  color: #fff;
+			height: 60px;
+			text-align: left;
 		}
 
-		/th,
+		th,
 		td {
 		  text-align: left;
 		  padding: 0.5em 1em;
+		}
+
+	.map-container{
+		overflow: hidden;
+		padding-bottom: 3%;
+		position: relative;
+		height: 50;
+		}
+
+	.map-container iframe{
+		left:0;
+		top:0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
 		}
