@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6
 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 400;
-	color: #222222;
+	color: #black;
 }
 a, a:hover, a:focus, a:active{
     outline: none;
@@ -62,20 +62,22 @@ hr.botm-line {
 /***************************************
 banner
 ***************************************/
+
 .navbar {
     margin-bottom: 0px;
     border: 0px;
 }
+
 .navbar {
     border-radius: 0px;
 }
 .navbar-default {
     background-color: #fff;
-    padding: 20px 0;
+    padding: 13px 0;
     transition: all 0.3s;
 }
 .navbar-default {
-    background-color: transparent;
+    background-color: #853E76;
     border: 0px;
 }
 .navbar {
@@ -99,13 +101,13 @@ banner
 
 @media (max-width: 768px) {
 	.navbar-collapse {
-		background: rgba(28,74,90, 0.9);
+		background: #6c4864;
 	}
 }
 
 .top-nav-collapse {
     padding: 0;
-    background: rgba(28,74,90, 0.9);
+    background: #853E76;
 }
 
 .white, .white:hover, .white:focus
@@ -120,7 +122,7 @@ banner
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     color: #fff;
     text-transform: uppercase;
-    background-color: rgba(12, 184, 182, 0.21);
+    background-color: #915183;
 }
 .navbar-default .navbar-nav > li > a
 {
@@ -133,7 +135,7 @@ banner
 {
 	color: #fff;
     text-transform: uppercase;
-    background-color: rgba(12, 184, 182, 0.21);
+    background-color: #9d6491;
 }
 .affix {
     background-color: #ffffff !important;
@@ -154,7 +156,7 @@ banner
   }
 }
 .bg-color{
-	background-color: RGBA(13, 70, 83, 0.78);
+	/*background-color: rgba(133,	62,	118, 0.4);*/
 	min-height: 650px;
 }
 .banner-info{
@@ -176,7 +178,7 @@ banner
 	margin-top: 30px;
 	padding: 10px 20px;
 	font-size: 12px;
-	background-color: rgba(12, 184, 182, 0.91);
+	background-color: RGBA(133, 62,	118, 0.8);
 	border-radius: 3px;
 	color: #fff;
 }
@@ -213,7 +215,7 @@ services
 cta-1
 ***************************************/
 .schedule-tab {
-	background-color: #0CB8B6;
+	background-color: #9d6491;
 	float: left;
 }
 .medi-info{
@@ -261,7 +263,7 @@ about
     width: 40px;
     height: 40px;
     padding-top: 6px;
-    background: #0cb8b6;
+    background: #D26E32;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -363,7 +365,13 @@ testimonial
 cta -2
 ***************************************/
 #cta-2{
-	background-color: rgb(41, 48, 46);
+	background-color: RGBA(133, 62,	118, 0.8);
+	height: 500px;
+	background-size: cover;
+
+	background-image: url(https://images.pexels.com/photos/2182979/pexels-photo-2182979.jpeg?cs=srgb&dl=doctor-sitting-in-front-of-his-desk-2182979.jpg&fm=jpg);
+}
+
 }
 .white{
 	color: #fff;
@@ -391,7 +399,7 @@ contact us
     margin-top: 40px;
 }
 .btn-form, .btn-form:hover, .btn-form:focus {
-    background-color: #0cb8b6;
+    background-color: #853E76;
     color: #fff;
     border-radius: 0px;
     padding: 10px 20px;
@@ -440,7 +448,7 @@ contact us
 footer
 ***************************************/
 #footer{
-	background-color: #325C6A;
+	background-color: #915183;
 }
 .ftr-tle {
     height: 50px;
@@ -546,7 +554,7 @@ footer
 		}
 
 		th {
-		  background-color: #0CB8B6;
+		  background-color: RGBA(133, 62,	118, 0.8);
 		  color: #fff;
 			height: 60px;
 			text-align: left;
