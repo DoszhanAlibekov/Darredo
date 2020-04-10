@@ -50,3 +50,10 @@ jQuery(document).ready(function($) {
     }, 3000);
 
 });
+
+// I want an animated line on the ABOUT page under section MISSION 
+jQuery(document).ready(function($){
+    setTimeout(function(){
+        $('.trans--grow').addClass('grow');
+    }, 275);
+});
