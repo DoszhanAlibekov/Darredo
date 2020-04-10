@@ -1,24 +1,3 @@
-// this is my mapboxGL token
-// the base style includes data provided by mapbox, this links the requests to my account
-mapboxgl.accessToken = 'pk.eyJ1IjoiY3dob25nLXFyaSIsImEiOiJjazZncWRkZGowb3kyM25vZXkwbms2cW0xIn0.lbwola6y7YDdaKLMdjif1g';
-// we want to return to this point and zoom level after the user interacts
-// with the map, so store them in variables
-var initialCenterPoint = [54.673831, 53.701172]
-var initialZoom = 1
-
-// create an object to hold the initialization options for a mapboxGL map
-var initOptions = {
-  container: 'z-depth-1-half map-container', // put the map in this container
-  style: 'mapbox://styles/doszhanalibekov/ck8t5w57302zy1iqgtif1buhu', // use this basemap
-  center: initialCenterPoint, // initial view center
-  zoom: initialZoom, // initial view zoom level (0-18)
-}
-// create the new map
-var map = new mapboxgl.Map(initOptions);
-
-// add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
-
 (function($) {
 
   // Add smooth scrolling to all links in navbar
@@ -59,7 +38,7 @@ $('.count').each(function () {
         duration: 2000,
         easing: 'swing',
         step: function (now) {
-            $(thisl).text(Math.ceil(now));
+            $(this).text(Math.ceil(now));
         }
     });
 });
@@ -68,6 +47,6 @@ jQuery(document).ready(function($) {
 
     setInterval(function() {
         updateValue();
-    }, 2000);
+    }, 3000);
 
 });
