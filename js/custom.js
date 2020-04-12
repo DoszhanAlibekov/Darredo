@@ -47,11 +47,11 @@ jQuery(document).ready(function($) {
 
     setInterval(function() {
         updateValue();
-    }, 3000);
+    }, 5000);
 
 });
 
-// I want an animated line on the ABOUT page under section MISSION 
+// I want an animated line on the ABOUT page under section MISSION
 jQuery(document).ready(function($){
     setTimeout(function(){
         $('.trans--grow').addClass('grow');

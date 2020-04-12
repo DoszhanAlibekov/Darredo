@@ -44,13 +44,13 @@ a, a:hover, a:focus, a:active {
 }
 
 .section-padding {
-  padding: 60px 0px;
+  padding: 5px 5px;
 }
 
 h2 {
   line-height: 150px;
   margin: 0;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 700px;
   text-transform: uppercase;
   text-align: center;
@@ -83,7 +83,7 @@ banner
 
 .navbar-default {
   background-color: #fff;
-  padding: 20px 5px;
+  padding: 18px 5px;
   transition: all 0.6s;
 }
 
@@ -104,8 +104,8 @@ banner
 
 /* logo information */
 .navbar-brand {
-	padding-top: 50px;
-  width: 200px;
+	padding-top: 59px;
+  width: 210px;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -120,7 +120,7 @@ banner
 
 /* navbar уходить вверх когда ты скроллишь */
 .top-nav-collapse {
-  padding: 4px;
+  padding: 2px;
   background: white;
 }
 
@@ -133,16 +133,18 @@ banner
   display: block;
 }
 
+/*
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   color: #421f3b;
   text-transform: uppercase;
   background-color: white;
-}
+}*/
 
+/* size of the navbar texts */
 .navbar-default .navbar-nav>li>a {
   color: #421f3b;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 100;
 }
 
@@ -152,13 +154,52 @@ banner
   background-color: white;
 }
 
-.affix {
+/* hover over navbar function is added */
+.myNavbar li {
+  position: relative;
+  padding: 1px 0;
+}
+
+.navbar-nav li a {
+  color: #421f3b;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 25;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 15px;
+  position: relative;
+}
+
+.navbar-nav li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #77376a;
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  width: 0;
+}
+.navbar-nav li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+
+/*.affix {
   background-color: #ffffff !important;
 }
 
 .affix .navbar-nav>li>a:hover, .affix .navbar-nav>li>a:focus {
   background-color: rgba(12, 184, 182) !important;
-}
+} */
 
 #banner {
   background: url('../img/bg-banner.jpg') no-repeat fixed;
@@ -426,15 +467,16 @@ testimonial
 /***************************************
 cta-2 is for section of DOH says about us and left side picture */
 #cta-2 {
+  background-color: RGBA(157,	157,	157, 0.1);
   width: 100%;
   height: auto;
-  padding: 25px;
+  padding: 80px;
 }
 
 /* this is for Department of Health says about us*/
 .column {
   float: left;
-  text-align: center;
+  text-align: left;
   width: 100%;
   height: 350px;
   background-size: cover;
@@ -481,7 +523,7 @@ contact us
 }
 
 .form-control {
-  height: 40px;
+  height: 10px;
 }
 
 .validation {
@@ -766,7 +808,7 @@ img {
 
 hr{
   margin-top: 20px;
-  padding: 0.4px 0;
+  padding: 1px 0;
   border: none;
   background-color: rgb(133, 62, 118, 0.7);
   letter-spacing: 5px;
@@ -872,6 +914,11 @@ td {
 	padding: 200px;
 	text-align: left;
 }
+
+h1 {
+  text-align: left;
+}
+
 
 #contact-second-section {
 	width: 100%;
